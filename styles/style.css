@@ -1,0 +1,122 @@
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.bg-main {
+    background-color: #4a4a4a;
+}
+
+.zoom:hover {
+    transform: scale(1.1);
+}
+
+.border-top-grey {
+    border-top: 1px solid #4a4a4a
+}
+
+.plr-3 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.w-15 {
+    width: 15% !important;
+}
+
+.ml-3 {
+    margin-left: 1rem;
+}
+
+.h-1000 {
+    height: 1000px;
+}
+
+.mr-3 {
+    margin-right: 1rem;
+}
+
+.border-right {
+    border-right: 1px solid white;
+}
+
+#hero {
+    background-image: url("../assets/images/dnd.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 500px;
+    background-position: center;
+}
+
+.overlay {
+    height: 500px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.vh-90 {
+    height: 90vh;
+}
+
+.btn-links {
+    background-color: #9e5eb8;
+}
+
+.btn-links:hover {
+    background-color: #dec8e7;
+    color: black;
+}
+
+.border-links {
+    border: 1px solid #2b1733;
+}
+
+.border-links:hover {
+    border: 2px solid #3f214b;
+    transform: scale(1.1);
+}
+
+.icon-zoom:hover {
+    transform: translate(1.25);
+}
+
+@media (min-width: 991.98px) {
+    main {
+        padding-left: 240px;
+    }
+}
+
+
+@media (max-width: 991.98px) {
+    .sidebar {
+        width: 100%;
+    }
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding: 72px 0 0;
+    /* Height of navbar */
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+    width: 240px;
+    z-index: 600;
+}
+
+.sidebar .active {
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* Scrollable contents if viewport is shorter than content. */
+}
