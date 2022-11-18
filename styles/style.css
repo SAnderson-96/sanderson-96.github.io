@@ -43,15 +43,53 @@ body {
 #hero {
     background-image: url("../assets/images/dnd.png");
     background-repeat: no-repeat;
-    background-size: contain;
-    height: 500px;
+    background-size: cover;
+    height: 35rem;
+    border-radius: 1rem;
     background-position: center;
 }
 
+.text-blue {
+    color: #9CDCFE;
+}
+
+.text-yellow {
+    color: #DCDCAA;
+}
+
+.text-java-yellow {
+    color: #FFCB6B;
+}
+
+.text-code-green {
+    color: #4EC9B0;
+}
+
+.text-java-blue {
+    color: #89DDFF;
+}
+
+.text-java-green {
+    color: #C2E77E;
+}
+
+.text-yellow-bracket {
+    color: #FFD700;
+}
+
+.text-orange-string {
+    color: #CE9178;
+}
+
 .overlay {
-    height: 500px;
+    height: 35rem;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
+    max-width: 10000px !important;
+}
+
+.ff-code {
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .img-fit-cover {
