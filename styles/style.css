@@ -41,12 +41,10 @@ body {
 }
 
 #hero {
-    background-image: url("../assets/images/dnd.png");
+    background-image: url("../assets/images/animatedBackground.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 35rem;
     border-radius: 1rem;
-    background-position: center;
 }
 
 .text-blue {
@@ -84,7 +82,8 @@ body {
 .overlay {
     height: 35rem;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    margin: auto;
+    /* background-color: rgba(0, 0, 0, 0.5); */
     max-width: 10000px !important;
 }
 

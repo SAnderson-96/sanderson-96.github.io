@@ -12,7 +12,8 @@
     <link href="./styles/style.css" rel="stylesheet">
     <link href="./styles/bootstrap-social.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/958f7ded4f.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <link rel="icon" type="image/png" href="./assets/images/logo.png" />
+    <title>Samuel Anderson</title>
 </head>
 
 <body class="bg-main">
@@ -32,7 +33,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
+                            <a class="nav-link" href="./projects.html">Projects</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Pricing</a>
@@ -42,20 +43,19 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-                                aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                                aria-haspopup="true" aria-expanded="false">Specific Project</a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Dungeon and Dragons Website</a>
+                                <a class="dropdown-item" href="#">Pokemon Storage System</a>
                                 <a class="dropdown-item" href="#">Something else here</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#">Separated link</a>
                             </div>
                         </li>
                     </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-sm-2" type="text" placeholder="Search">
-                        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-                    </form>
+                    <div>
+                        <img class="mr-3" src="./assets/images/logo.png" style="height: 24px;">
+                    </div>
                 </div>
             </div>
         </nav>
@@ -94,7 +94,7 @@
                         <li class="row">
                             <div class="container m-2">
                                 <button class="btn btn-links border-links w-100 shadow">
-                                    Orders
+                                    Contact
                                 </button>
                             </div>
                         </li>
@@ -137,20 +137,19 @@
 
     <main class="bg-main" style="margin-top: 72px;">
         <div class="mt-5 h-100">
-            <div class="mt-5 rounded-5">
-                <div class="container bg-black bg-opacity-50 rounded shadow-sm">
-                    <div class="text-center h2 fw-bold">
+
+            <div id="hero" class="background">
+                <div class="mt-5 rounded-5">
+
+                    <div class="text-center h2 fw-bold" style="padding-top: 100px;">
                         Samuel Anderson
                         <div class="fw-light">Full Stack Software Developer</div>
-                        <div class="mt-5 bg-black bg-opacity-50 pt-2 pb-2 w-50 text-center rounded m-auto"><a
-                                href="/assets/cv.pdf" download="SamuelAnderson" class="link-success"><i
-                                    class="fa-solid fa-download"></i>
+                        <div class="mt-5 pt-2 pb-2 w-50 text-center rounded m-auto"><a href="/assets/cv.pdf"
+                                download="SamuelAnderson" class="link-success"><i class="fa-solid fa-download"></i>
                                 Download CV</a></div>
                     </div>
-                </div>
-                <div id="hero" class="background">
-                    <div class="overlay rounded-4 container w-100 m-0 d-flex align-items-center">
-                        <div class="container text-center h1 ff-code bg-black bg-opacity-25 rounded">
+                    <div class="overlay container w-100 m-0 d-flex align-items-center">
+                        <div class="container text-center h1 ff-code bg-black bg-opacity-25 rounded-5 pt-1 pb-1">
                             <p class="h1"><span class="text-blue">Console</span>.<span
                                     class="text-yellow">log</span><span class="text-yellow-bracket">(</span><span
                                     class="text-orange-string">"Welcome"</span><span
@@ -173,49 +172,67 @@
                     </div>
 
                 </div>
-                <div class="row m-auto mt-5">
-                    <div class="card mb-3 shadow w-50 m-auto rounded-5">
-                        <div class="row g-0 align-items-center">
-                            <div class="col-md-4 box">
-                                <img src="./assets/images/cpu.jpg"
-                                    class="img-fluid rounded-5 center-block img-thumbnail img-fit-cover" alt="cpu">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body pt-5 pb-5">
-                                    <h2 class="card-title h2 text-center">Who am I?</h2>
-                                    <p class="card-text h5">I am a full stack software developer currently enrolled in
-                                        Computer Science at John Abbott College</p>
-                                    <p class="card-text h5">I am interested in many aspects of the software development
-                                        world, mainly application development, full-stack web development, and game
-                                        development.</p>
-                                    <p class="card-text"><small class="text-muted">And so much more</small></p>
-                                </div>
+            </div>
+            <div class="row m-auto mt-5">
+                <div class="card mb-3 shadow w-50 m-auto rounded-5">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-md-4 box">
+                            <img src="./assets/images/cpu.jpg"
+                                class="img-fluid rounded-5 center-block img-thumbnail img-fit-cover" alt="cpu">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body pt-5 pb-5">
+                                <h2 class="card-title h2 text-center">Who am I?</h2>
+                                <p class="card-text h5">I am a full stack software developer currently enrolled in
+                                    Computer Science at John Abbott College</p>
+                                <p class="card-text h5">I am interested in many aspects of the software development
+                                    world, mainly application development, full-stack web development, and game
+                                    development.</p>
+                                <p class="card-text"><small class="text-muted">And so much more</small></p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row m-auto mt-5">
-                    <div class="card mb-3 shadow w-50 m-auto rounded-5">
-                        <div class="row g-0 align-items-center">
-                            <div class="col-md-8">
-                                <div class="card-body pt-5 pb-5 text-center">
-                                    <h2 class="card-title h2">What do I do?</h2>
-                                    <button class="card-text btn btn-outline-success p-3 m-3">View My
-                                        Projects</button>
-                                    <button class="card-text btn btn-outline-success m-auto p-3 m-3">Work With
-                                        Me</button>
-                                    <p class="card-text"><small class="text-muted"></small></p>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <img src="./assets/images/reactCode.jpg" class="img-fluid rounded-5 img-thumbnail"
-                                    alt="cpu">
-                            </div>
+            </div>
+            <div class="row m-auto mt-5">
+                <div class="card mb-3 shadow w-50 m-auto rounded-5">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-md-8">
+                            <div class="card-body pt-5 pb-5 text-center">
+                                <h2 class="card-title h2">What I do?</h2>
+                                <a href="./projects.html"><button class="card-text btn btn-outline-success p-3 m-3">View
+                                        My
+                                        Projects</button></a>
 
+                                <button class="card-text btn btn-outline-success m-auto p-3 m-3">Work With
+                                    Me</button>
+                                <p class="card-text"><small class="text-muted"></small></p>
+                            </div>
                         </div>
+                        <div class="col-md-4">
+                            <img src="./assets/images/reactCode.jpg" class="img-fluid rounded-5 img-thumbnail"
+                                alt="cpu">
+                        </div>
+
                     </div>
                 </div>
-                <div class="row h-1000">
+            </div>
+
+            <div class="row m-auto mt-5">
+                <div class="card mb-3 shadow w-50 m-auto rounded-5">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-md-8">
+                            <div class="card-body pt-5 pb-5 text-center">
+                                <h2 class="card-title h2">Connect With Me</h2>
+
+                            </div>
+                        </div>
+                        <div class="col-md-4 mt-4 mb-4">
+                            <img src="./assets/images/socialsPhone.jpg" class="img-fluid rounded-5 img-thumbnail"
+                                alt="cpu">
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
