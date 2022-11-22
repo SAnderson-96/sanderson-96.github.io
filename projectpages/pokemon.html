@@ -13,6 +13,8 @@
     <link href="../styles/bootstrap-social.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/958f7ded4f.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" href="../assets/images/logo.png" />
+    <link rel="stylesheet" href="../styles/carousel.css">
+    <link rel="stylesheet" href="../styles/carouselPokemon.css">
     <title>Samuel Anderson</title>
 </head>
 
@@ -43,8 +45,8 @@
                             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
                                 aria-haspopup="true" aria-expanded="false">Specific Project</a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Dungeons and Dragons Website</a>
-                                <a class="dropdown-item" href="./pokemon.html">Pokemon Storage System</a>
+                                <a class="dropdown-item" href="./dnd.html">Dungeons and Dragons Website</a>
+                                <a class="dropdown-item" href="#">Pokemon Storage System</a>
                                 <a class="dropdown-item" href="#">Something else here</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#">Separated link</a>
@@ -118,7 +120,192 @@
     </header>
 
     <main class="bg-main" style="margin-top: 72px;">
-        <div class="mt-5 h-100">
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner bg-dark-blue rounded-5">
+                <div class="carousel-item active c-item-set-height">
+                    <img class="bd-placeholder-img d-block m-auto" height="100%" src="../assets/images/pokemonWPF.png"
+                        aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+
+                    <div class=" container">
+                        <div class="carousel-caption text-start bg-black bg-opacity-75 rounded-5 p-lg-3">
+                            <h1>WPF Pokemon Storage System</h1>
+                            <p>An interpretation of the PC from Pokémon with a more modern UI.</p>
+                            <p><a class="btn btn-lg btn-primary"
+                                    href="https://github.com/jeffbrin/PokemonStorageApplication" target="_blank">View
+                                    Repo</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item c-item-set-height">
+                    <img class="bd-placeholder-img d-block m-auto" height="100%" src="../assets/images/fullBox.png"
+                        aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+
+                    <div class="container">
+                        <div class="carousel-caption bg-black bg-opacity-75 rounded-5 p-lg-3">
+                            <h1>Add Pokemon to your Box!</h1>
+                            <p>Relive the glory days and add your favourite Pokémon to your box.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#">View Repo</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item c-item-set-height">
+                    <img class="bd-placeholder-img d-block m-auto" height="100%"
+                        src="../assets/images/pokemonchilling.gif" aria-hidden="true"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+                    <div class="container">
+                        <div class="carousel-caption text-end bg-black bg-opacity-75 rounded-5 p-lg-3">
+                            <h1>See the Pokémon in all their glory!</h1>
+                            <p>CLick on the Pokémon in your box to see an animated image!</p>
+                            <p><a class="btn btn-lg btn-primary" href="#">View Repo</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
+
+
+        <!-- Marketing messaging and featurettes
+        ================================================== -->
+        <!-- Wrap the rest of the page in another container to center all the content. -->
+
+        <div class="container marketing">
+
+            <!-- Three columns of text below the carousel -->
+            <div class="row features">
+                <div class="col-lg-4 features">
+                    <img class="bd-placeholder-img rounded-5 h-50" src="../assets/images/PokmeonSelection.gif"
+                        aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+
+                    <div class="h-50 d-flex-sam">
+                        <h2 class="fw-normal">Select From all Gen 1 Pokémon</h2>
+                        <p>You can select any Pokémon from the best Gen ever, Gen 1!
+                        </p>
+                        <p class="d-inline-block align-self-flex-end"><a class="btn btn-primary" href="#">View Repo
+                                &raquo;</a></p>
+                    </div>
+
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4 features">
+                    <img class="bd-placeholder-img rounded-5 h-50" width="100%" height="auto"
+                        src="../assets/images/pokemonStats.gif" aria-hidden="true" preserveAspectRatio="xMidYMid slice"
+                        focusable="false">
+
+                    <div class="h-50 d-flex-sam">
+                        <h2 class="fw-normal">View Stats</h2>
+                        <p>View the base stats of a specific Pokémon with a simple button press!
+                        </p>
+                        <p class="d-inline-block align-self-flex-end"><a class="btn btn-primary" href="#">View Repo
+                                &raquo;</a></p>
+                    </div>
+
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4 features">
+                    <img class="bd-placeholder-img rounded-5 h-50" width="100%" height="auto"
+                        src="../assets/images/pokemonStats.gif" aria-hidden="true" preserveAspectRatio="xMidYMid slice"
+                        focusable="false">
+                    <div class="h-50 d-flex-sam">
+                        <h2 class="fw-normal">Add any move to a Pokémon!</h2>
+                        <p>Your Pokémon can have any move you want.</p>
+                        <p class="d-inline-block align-self-flex-end"><a class="btn btn-primary" href="#">View details
+                                &raquo;</a></p>
+                    </div>
+
+                </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+
+
+            <!-- START THE FEATURETTES -->
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span
+                            class="text-muted">It’ll blow
+                            your mind.</span></h2>
+                    <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting
+                        prose
+                        here.</p>
+                </div>
+                <div class="col-md-5">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                        height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa"
+                            dy=".3em">500x500</text>
+                    </svg>
+
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-muted">See
+                            for
+                            yourself.</span></h2>
+                    <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of
+                        how this
+                        layout would work with some actual real-world content in place.</p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                        height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa"
+                            dy=".3em">500x500</text>
+                    </svg>
+
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span
+                            class="text-muted">Checkmate.</span>
+                    </h2>
+                    <p class="lead">And yes, this is the last block of representative placeholder content. Again, not
+                        really
+                        intended to be actually read, simply here to give you a better view of what this would look like
+                        with some
+                        actual content. Your content.</p>
+                </div>
+                <div class="col-md-5">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                        height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa"
+                            dy=".3em">500x500</text>
+                    </svg>
+
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <!-- /END THE FEATURETTES -->
+
+        </div><!-- /.container -->
     </main>
 </body>

@@ -7,6 +7,9 @@ body {
   color: white;
 }
 
+.mh-500px{
+  max-height: 500px;
+}
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */

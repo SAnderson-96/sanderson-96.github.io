@@ -1,0 +1,15 @@
+.c-item-set-height{
+    height: 600px !important;
+}
+.bg-dark-blue{
+    background-color: #181734;
+}
+
+.features{
+    height: 500px!important;
+}
+.d-flex-sam{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
