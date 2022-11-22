@@ -10,6 +10,7 @@
         defer></script>
     <link href="../styles/bootstrap.min.css" rel="stylesheet">
     <link href="../styles/style.css" rel="stylesheet">
+    <link href="../styles/carousel.css" rel="stylesheet">
     <link href="../styles/bootstrap-social.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/958f7ded4f.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" href="../assets/images/logo.png" />
@@ -35,9 +36,6 @@
                         <li class="nav-item">
                             <a class="nav-link active" href="../projects.html">Projects</a>
                             <span class="visually-hidden">(current)</span>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">About</a>
@@ -100,20 +98,6 @@
                             </div>
                         </li>
                         <li class="row">
-                            <div class="container m-2">
-                                <button class="btn btn-links border-links w-100 shadow">
-                                    Products
-                                </button>
-                            </div>
-                        </li>
-                        <li class="row">
-                            <div class="container m-2">
-                                <button class="btn btn-links border-links w-100 shadow">
-                                    Customers
-                                </button>
-                            </div>
-                        </li>
-                        <li class="row">
                             <div class="d-flex justify-content-evenly">
                                 <!-- SVGS HERE -->
                                 <!-- Github -->
@@ -135,8 +119,208 @@
     </header>
 
     <main class="bg-main" style="margin-top: 72px;">
-        <div class="mt-5 h-100">
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="bd-placeholder-img" width="100%" src="../assets/images/dnd.png" aria-hidden="true"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+                    <div class="container">
+                        <div class="carousel-caption text-start bg-black bg-opacity-75 rounded-5 p-lg-3">
+                            <h1>DND Character Creation Website</h1>
+                            <p>A fully fledged dnd character creation website with a character sheet to keep track while
+                                you play!</p>
+                            <p><a class="btn btn-lg btn-primary" href="#">View Repo</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="bd-placeholder-img" width="100%" src="../assets/images/dndCharacterCreation1.png"
+                        aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+
+                    <div class="container">
+                        <div class="carousel-caption bg-black bg-opacity-75 rounded-5 p-lg-3">
+                            <h1>Create Characters!</h1>
+                            <p>No more boring character creations, get a custom image after creating your character.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#">View Repo</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="bd-placeholder-img" width="100%" src="../assets/images/dndSpellRepo.png"
+                        aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+
+                    <div class="container">
+                        <div class="carousel-caption text-end bg-black bg-opacity-75 rounded-5 p-lg-3">
+                            <h1>Make Custom Spells!</h1>
+                            <p>Create your own Homebrew spells and use them during your campaign!</p>
+                            <p><a class="btn btn-lg btn-primary" href="#">View Repo</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
+
+
+        <!-- Marketing messaging and featurettes
+        ================================================== -->
+        <!-- Wrap the rest of the page in another container to center all the content. -->
+
+        <div class="container marketing">
+
+            <!-- Three columns of text below the carousel -->
+            <div class="row features">
+                <div class="col-lg-4 features">
+                    <img class="bd-placeholder-img rounded-5 h-50" src="../assets/images/dndDiceRoll.gif"
+                        aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+
+                    <div class="h-50">
+                        <h2 class="fw-normal">Roll Dice</h2>
+                        <p>On the character sheet page, you can select a die beside a skill and it will automatically
+                            roll
+                            for you and include
+                            your proficiency bonus!
+                        </p>
+                        <p><a class="btn btn-primary" href="#">View Repo &raquo;</a></p>
+                    </div>
+
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4 features">
+                    <img class="bd-placeholder-img rounded-5 h-50" width="100%"
+                        src="../assets/images/dndViewCharacters.png" aria-hidden="true"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+                    <div class="h-50">
+                        <h2 class="fw-normal">View Characters</h2>
+                        <p>View all of the characters you have created over multiple campaigns and select whichever one
+                            you
+                            want!
+                        </p>
+                        <p><a class="btn btn-primary" href="#">View Repo &raquo;</a></p>
+                    </div>
+
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4 features">
+                    <div id="miniCarouselCharacterCreation" class="carousel slide h-50" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active mini-carousel">
+                                <img src="../assets/images/dndCharacterCreation1.png" class="d-block h-100" alt="...">
+                            </div>
+                            <div class="carousel-item rounded-5">
+                                <img src="../assets/images/dndCharacterCreation2.png" class="d-block h-100" alt="...">
+                            </div>
+                            <div class="carousel-item rounded-5">
+                                <img src="../assets/images/dndCharacterCreation3.png" class="d-block h-100" alt="...">
+                            </div>
+                            <div class="carousel-item rounded-5">
+                                <img src="../assets/images/dndCharacterCreation4.png" class="d-block h-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-50">
+                        <h2 class="fw-normal">Create Characters</h2>
+                        <p>And lastly this, the third column of representative placeholder content.</p>
+                        <p><a class="btn btn-primary" href="#">View details &raquo;</a></p>
+                    </div>
+
+                </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+
+
+            <!-- START THE FEATURETTES -->
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span
+                            class="text-muted">It’ll blow
+                            your mind.</span></h2>
+                    <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting
+                        prose
+                        here.</p>
+                </div>
+                <div class="col-md-5">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                        height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa"
+                            dy=".3em">500x500</text>
+                    </svg>
+
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-muted">See
+                            for
+                            yourself.</span></h2>
+                    <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of
+                        how this
+                        layout would work with some actual real-world content in place.</p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                        height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa"
+                            dy=".3em">500x500</text>
+                    </svg>
+
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span
+                            class="text-muted">Checkmate.</span>
+                    </h2>
+                    <p class="lead">And yes, this is the last block of representative placeholder content. Again, not
+                        really
+                        intended to be actually read, simply here to give you a better view of what this would look like
+                        with some
+                        actual content. Your content.</p>
+                </div>
+                <div class="col-md-5">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                        height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa"
+                            dy=".3em">500x500</text>
+                    </svg>
+
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <!-- /END THE FEATURETTES -->
+
+        </div><!-- /.container -->
+
+
     </main>
 
 </body>

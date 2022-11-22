@@ -96,7 +96,7 @@ body {
 }
 
 .overlay {
-    height: 35rem;
+    height: 25rem;
     width: 100%;
     margin: auto;
     /* background-color: rgba(0, 0, 0, 0.5); */
@@ -188,4 +188,21 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
     /* Scrollable contents if viewport is shorter than content. */
+}
+
+.btn-primary {
+    background-color: #2a9d8f !important;
+}
+
+.btn-primary:hover {
+    background-color: #46cebd !important;
+    color: black;
+}
+
+.btn-links {
+    background-color: #E76F51;
+}
+
+.btn-links:hover {
+    background-color: #f0a794;
 }
