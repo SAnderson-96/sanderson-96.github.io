@@ -206,3 +206,12 @@ body {
 .btn-links:hover {
     background-color: #f0a794;
 }
+
+#aboutMeBackground {
+    background-image: url("../assets/images/Meteor.svg");
+    height: 500px;
+    padding-top: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    border-radius: 10rem;
+}
