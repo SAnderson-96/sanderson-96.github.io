@@ -1,6 +1,7 @@
 body {
     overflow-y: scroll;
     overflow-x: hidden;
+    font-family: Consolas, monaco, monospace;
 }
 
 .bg-main {
@@ -214,4 +215,17 @@ body {
     padding-left: 3rem;
     padding-right: 3rem;
     border-radius: 10rem;
+}
+
+#connectWithMeBtn {
+    transition: all 333ms ease-in-out;
+    font-size: 3rem !important;
+    background-color: #E76F51 !important;
+}
+
+#connectWithMeBtn:hover {
+    font-size: 3.5rem !important;
+    transform: scale(1.15);
+    background-color: #f0a794 !important;
+    color: black;
 }

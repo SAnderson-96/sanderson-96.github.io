@@ -1,0 +1,6 @@
+#backgroundImageContact {
+    background-image: url("../assets/images/contactBackground.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .85;
+}

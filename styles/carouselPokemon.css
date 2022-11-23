@@ -1,15 +1,27 @@
-.c-item-set-height{
+@font-face {
+    font-family: pokemon;
+    src: url(../assets/fonts/Pokemon\ Solid.ttf);
+}
+
+
+.c-item-set-height {
     height: 600px !important;
 }
-.bg-dark-blue{
+
+.bg-dark-blue {
     background-color: #181734;
 }
 
-.features{
-    height: 500px!important;
+.features {
+    height: 500px !important;
 }
-.d-flex-sam{
+
+.d-flex-sam {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.pokemonFont {
+    font-family: pokemon !important;
 }

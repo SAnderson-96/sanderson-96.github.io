@@ -11,6 +11,7 @@
     <link href="./styles/bootstrap.min.css" rel="stylesheet">
     <link href="./styles/style.css" rel="stylesheet">
     <link href="./styles/bootstrap-social.css" rel="stylesheet">
+    <link href="./styles/contact.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/958f7ded4f.js" crossorigin="anonymous"></script>
     <script src="./scripts/main.js"></script>
     <link rel="icon" type="image/png" href="./assets/images/logo.png" />
@@ -29,7 +30,7 @@
                 <div class="collapse navbar-collapse" id="navbarColor02">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Home
+                            <a class="nav-link active" href="./index.html">Home
                                 <span class="visually-hidden">(current)</span>
                             </a>
                         </li>
@@ -63,7 +64,7 @@
                     <svg class="bi me-2" width="40" height="32">
                         <use xlink:href="#bootstrap"></use>
                     </svg>
-                    <span class="fs-4">Welcome</span>
+                    <span class="fs-4">Contact</span>
                 </a>
                 <hr>
                 <div class="container zoom text-center mb-3">
@@ -91,10 +92,9 @@
                         </li>
                         <li class="row">
                             <div class="container m-2">
-                                <a href="./contact.html">
-                                    <button class="btn btn-links border-links w-100 shadow">
-                                        Contact
-                                    </button></a>
+                                <button class="btn btn-links border-links w-100 shadow">
+                                    Contact
+                                </button>
                             </div>
                         </li>
                         <li class="row">
@@ -119,115 +119,105 @@
     </header>
 
 
-
     <main class="bg-main" style="margin-top: 72px;">
-        <div class="mt-5 h-100">
+        <div id="backgroundImageContact" class="container p-5 ">
+            <div class="bg-black bg-opacity-50 w-100">
+                <div class="container plr-3">
+                    <form>
+                        <!--Section heading-->
+                        <h2 class="h1-responsive font-weight-bold text-center my-4">Contact Me</h2>
+                        <!--Section description-->
+                        <p class="text-center w-responsive mx-auto mb-5 h5">If you would like to propose a project to
+                            me,<br>
+                            feel free to send me an email by sending in a request below.</p>
 
-            <div id="hero" class="background">
-                <div class="mt-5 rounded-5">
+                        <div class="row">
 
-                    <div class="text-center h2 fw-bold my-name" style="padding-top: 100px;">
-                        Samuel Anderson
-                        <div class="fw-light">Full Stack Software Developer</div>
+                            <!--Grid column-->
+                            <div class="col-md-9 mb-md-0 mb-5">
+                                <form id="contact-form" name="contact-form" action="mail.php" method="POST">
 
-                        <div class="mt-5 pt-2 pb-2 w-50 text-center rounded m-auto">
-                            <a href="/assets/cv.pdf" download="SamuelAnderson" class="link-success h1 fw-bolder"><i
-                                    class="fa-solid fa-download"></i>
-                                Download CV
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="overlay container w-100 m-0 d-flex align-items-center">
-                    <div class="container text-center h1 ff-code bg-black bg-opacity-25 rounded-5 pt-1 pb-1">
-                        <!-- <p class="h1"><span class="text-blue">Console</span>.<span
-                                    class="text-yellow">log</span><span class="text-yellow-bracket">(</span><span
-                                    class="text-orange-string">"Welcome"</span><span
-                                    class="text-yellow-bracket">)</span>;
-                            </p>
-                            <p class="h2"><span class="text-code-green">Console</span>.<span
-                                    class="text-yellow">WriteLine</span>(<span
-                                    class="text-orange-string">"Welcome"</span>);</p>
-                            <p class="h3">print("Welcome");</p>
-                            <p class="h4">
-                                <span class="text-java-yellow">System</span>.out.<span
-                                    class="text-java-blue">println</span><span>(</span><span
-                                    class="text-java-green">"Welcome"</span><span>);</span>
-                            </p>
-                            <p class="h5">std::cout <span class="text-orange-string">
-                                    << </span> <span class="text-java-green">"Hello World!"</span> ;</p> -->
-                        <h1 id="typewriter" class="ff-code"></h1>
-                    </div>
+                                    <!--Grid row-->
+                                    <div class="row pt-5">
 
-                </div>
+                                        <!--Grid column-->
+                                        <div class="col-md-12">
+                                            <div class="md-form mb-0">
+                                                <input type="text" id="name" name="name" class="form-control">
+                                                <label for="name" class="h5 ml-3">Your name</label>
+                                            </div>
+                                        </div>
+                                        <!--Grid column-->
+                                    </div>
+                                    <!--Grid row-->
+                                    <div class="row pt-5">
+                                        <div class="col-md-12">
+                                            <div class="md-form mb-0">
+                                                <input type="text" id="email" name="email" class="form-control">
+                                                <label for="email" class="h5 ml-3">Your email</label>
+                                            </div>
+                                        </div>
+                                    </div>
 
-            </div>
-        </div>
-        <div class="row m-auto mt-5">
-            <div class="card mb-3 shadow w-50 m-auto rounded-5">
-                <div class="row g-0 align-items-center">
-                    <div class="col-md-4 box">
-                        <img src="./assets/images/cpu.jpg"
-                            class="img-fluid rounded-5 center-block img-thumbnail img-fit-cover" alt="cpu">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body pt-5 pb-5">
-                            <h2 class="card-title h2 text-center">Who am I?</h2>
-                            <p class="card-text h5">I am a full stack software developer currently enrolled in
-                                Computer Science at John Abbott College</p>
-                            <p class="card-text h5">I am interested in many aspects of the software development
-                                world, mainly application development, full-stack web development, and game
-                                development.</p>
-                            <p class="card-text"><small class="text-muted">And so much more</small></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row m-auto mt-5">
-            <div class="card mb-3 shadow w-50 m-auto rounded-5">
-                <div class="row g-0 align-items-center">
-                    <div class="col-md-8">
-                        <div class="card-body pt-5 pb-5 text-center">
-                            <h2 class="card-title h2">What I do?</h2>
-                            <a href="./projects.html"><button class="card-text btn btn-outline-success p-3 m-3">View
-                                    My
-                                    Projects</button></a>
+                                    <!--Grid row-->
+                                    <div class="row pt-5">
+                                        <div class="col-md-12">
+                                            <div class="md-form mb-0">
+                                                <input type="text" id="subject" name="subject" class="form-control">
+                                                <label for="subject" class="h5 ml-3">Subject</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Grid row-->
 
+                                    <!--Grid row-->
+                                    <div class="row">
 
-                            <a href="./contact.html"><button
-                                    class="card-text btn btn-outline-success m-auto p-3 m-3">Work With
-                                    Me</button></a>
-                            <p class="card-text"><small class="text-muted"></small></p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="./assets/images/reactCode.jpg" class="img-fluid rounded-5 img-thumbnail" alt="cpu">
-                    </div>
+                                        <!--Grid column-->
+                                        <div class="col-md-12">
 
-                </div>
-            </div>
-        </div>
+                                            <div class="md-form">
+                                                <textarea type="text" id="message" name="message" rows="5"
+                                                    class="form-control md-textarea"></textarea>
+                                                <label for="message" class="h5 ml-3">Your message</label>
+                                            </div>
 
-        <div class="row m-auto mt-5">
-            <div class="card mb-3 shadow w-50 m-auto rounded-5">
-                <div class="row g-0 align-items-center">
-                    <div class="col-md-8">
-                        <div class="card-body pt-5 pb-5 text-center">
-                            <h2 class="card-title h2"><a class="btn btn-secondary rounded-3" id="connectWithMeBtn"
-                                    href="./about.html">Connect</a>
-                                With
-                                Me</h2>
+                                        </div>
+                                    </div>
+                                    <!--Grid row-->
+
+                                </form>
+
+                                <div class="text-center text-md-left">
+                                    <a class="btn btn-primary p-4 mb-5"
+                                        onclick="document.getElementById('contact-form').submit();">Send</a>
+                                </div>
+                                <div class="status"></div>
+                            </div>
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="col-md-3 text-center">
+                                <ul class="list-unstyled mb-0">
+                                    <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                                        <p>Montréal Québec Canada</p>
+                                    </li>
+
+                                    <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                                        <p></p>
+                                    </li>
+
+                                    <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                                        <p>samuel.c.anderson96@gmail.com</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--Grid column-->
 
                         </div>
-                    </div>
-                    <div class="col-md-4 mt-4 mb-4">
-                        <img src="./assets/images/socialsPhone.jpg" class="img-fluid rounded-5 img-thumbnail" alt="cpu">
-                    </div>
-
+                    </form>
                 </div>
             </div>
-        </div>
         </div>
     </main>
 
