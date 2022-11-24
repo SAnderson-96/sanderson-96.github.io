@@ -12,9 +12,7 @@
     background-color: #181734;
 }
 
-.features {
-    height: 500px !important;
-}
+.features {}
 
 .d-flex-sam {
     display: flex;

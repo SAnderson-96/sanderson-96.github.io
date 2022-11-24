@@ -1,0 +1,17 @@
+@media screen and (max-width: 780px) {
+    .d-flex {
+        flex-direction: column;
+        margin: auto;
+        justify-self: unset;
+        align-items: center;
+        padding-top: 0 !important;
+    }
+
+    .container {
+        margin: auto;
+    }
+
+    .card {
+        margin-top: 2rem;
+    }
+}
