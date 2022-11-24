@@ -268,3 +268,11 @@ body {
         font-size: 1.75rem;
     }
 }
+
+.ml-5 {
+    margin-left: 3rem !important;
+}
+
+.mr-5 {
+    margin-right: 3rem !important;
+}
