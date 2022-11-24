@@ -91,12 +91,5 @@ body {
   margin-bottom: 0rem;
 }
 
-.features {}
-
-.mini-carousel {
-  display: block;
-  object-fit: cover;
-  /* or object-fit: contain; */
-}
 
 @media screen and (max-width: 480px) {}

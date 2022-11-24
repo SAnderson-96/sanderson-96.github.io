@@ -258,3 +258,13 @@ body {
     background-color: #f0a794 !important;
     color: black;
 }
+
+@media screen and (max-width: 600px) {
+    .sm-hidden {
+        display: none !important;
+    }
+
+    .sm-h3 {
+        font-size: 1.75rem;
+    }
+}
